@@ -9,6 +9,12 @@ class ImageViewSet(ListAPIView):
     serializer_class = ImageSerializer
 
     def post(self, request, *args, **kwargs):
+        print()
+        print(request)
+        print()
+        print(request.data)
+        print()
+
         file = request.data['image']
         image = UploadImageTest.objects.create(image=file)
         return Response({"GOOD"})

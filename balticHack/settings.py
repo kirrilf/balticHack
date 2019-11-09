@@ -49,6 +49,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'image.middleware.MyMiddlewareGET',
+    'image.middleware.MyMiddlewareOPTIONS',
 ]
 
 ROOT_URLCONF = 'balticHack.urls'
